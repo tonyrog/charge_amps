@@ -1,0 +1,9 @@
+{application, charge_amps,
+ [{description, "Charge Amps REST api"},
+  {vsn, git},
+  {modules, ["@@MODULES@@"]},
+  {mod, {charge_amps_app, []}},
+%%  {registered, [App_srv]},
+  {env, []},
+  {applications,[kernel,stdlib,jsone,rester]}
+  ]}.
